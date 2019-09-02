@@ -1,11 +1,27 @@
 {
   "contractName": "TodoList",
-  "abi": [],
-  "bytecode": "0x608060405260008055348015601357600080fd5b5060358060216000396000f3fe6080604052600080fdfea165627a7a72305820080d44d63d68ca0f73ca93aac333d5d257fc9ab7bcc909326679bf9f3cf004d30029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820080d44d63d68ca0f73ca93aac333d5d257fc9ab7bcc909326679bf9f3cf004d30029",
-  "sourceMap": "25:143:1:-;;;164:1;147:18;;25:143;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:143:1;;;;;;;",
-  "deployedSourceMap": "25:143:1:-;;;;;",
-  "source": "pragma solidity ^0.5.0;\n\ncontract TodoList {\n    //this is a state variable any data written in the state variable is stored in the blockchain\n    uint taskCount = 0;\n}\n",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "taskCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xb6cb58a5"
+    }
+  ],
+  "bytecode": "0x608060405260008055348015601357600080fd5b506099806100226000396000f3fe608060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663b6cb58a581146043575b600080fd5b348015604e57600080fd5b5060556067565b60408051918252519081900360200190f35b6000548156fea165627a7a723058205e0bd998b1f793cfb8ef62e55184952d8c617a5677cef38f9d6256302fdc26550029",
+  "deployedBytecode": "0x608060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663b6cb58a581146043575b600080fd5b348015604e57600080fd5b5060556067565b60408051918252519081900360200190f35b6000548156fea165627a7a723058205e0bd998b1f793cfb8ef62e55184952d8c617a5677cef38f9d6256302fdc26550029",
+  "sourceMap": "25:150:1:-;;;171:1;147:25;;25:150;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:150:1;;;;;;;",
+  "deployedSourceMap": "25:150:1:-;;;;;;;;;;;;;;;;;;;;;;;147:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;147:25:1;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\ncontract TodoList {\n    //this is a state variable any data written in the state variable is stored in the blockchain\n    uint public taskCount = 0;\n}\n",
   "sourcePath": "/Users/cokoyoh/code/blockchain/eth-todo-list/contracts/TodoList.sol",
   "ast": {
     "absolutePath": "/Users/cokoyoh/code/blockchain/eth-todo-list/contracts/TodoList.sol",
@@ -47,7 +63,7 @@
             "name": "taskCount",
             "nodeType": "VariableDeclaration",
             "scope": 62,
-            "src": "147:18:1",
+            "src": "147:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -74,7 +90,7 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "164:1:1",
+              "src": "171:1:1",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
@@ -82,14 +98,14 @@
               },
               "value": "0"
             },
-            "visibility": "internal"
+            "visibility": "public"
           }
         ],
         "scope": 63,
-        "src": "25:143:1"
+        "src": "25:150:1"
       }
     ],
-    "src": "0:169:1"
+    "src": "0:176:1"
   },
   "legacyAST": {
     "absolutePath": "/Users/cokoyoh/code/blockchain/eth-todo-list/contracts/TodoList.sol",
@@ -131,7 +147,7 @@
             "name": "taskCount",
             "nodeType": "VariableDeclaration",
             "scope": 62,
-            "src": "147:18:1",
+            "src": "147:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -158,7 +174,7 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "164:1:1",
+              "src": "171:1:1",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
@@ -166,22 +182,29 @@
               },
               "value": "0"
             },
-            "visibility": "internal"
+            "visibility": "public"
           }
         ],
         "scope": 63,
-        "src": "25:143:1"
+        "src": "25:150:1"
       }
     ],
-    "src": "0:169:1"
+    "src": "0:176:1"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xB2524ac83FcC151Ef7Fd1A22ae07266fD7215e56",
+      "transactionHash": "0xb95d10767a0da91b9e2663da133a9bfae77c5a20b8f7f48e8bf8863007777f74"
+    }
+  },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-09-02T09:16:06.936Z",
+  "updatedAt": "2019-09-02T10:01:33.867Z",
   "devdoc": {
     "methods": {}
   },
